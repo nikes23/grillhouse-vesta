@@ -1,0 +1,398 @@
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 25px;
+	left: 47%;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: lightgray;
+	color: rgba(178,  34,  34, 1.0);
+	cursor: pointer;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+	margin: 4px 4px;
+	border-radius: 50%;
+}
+
+#myBtn:hover {
+	background-color: darkgray;
+}
+
+/**
+*
+*@authors Anton Kempf & Lukas Dietz
+*
+*/
+
+#toplink {
+	position: fixed;
+	bottom: 0px;
+	right: 20px;
+	font-size: 40px;
+}
+
+/*Google Maps API Position von Herr Stiehl*/
+#pos {
+	position: absolute;
+	width: 480px;
+	height: 380px;
+}
+/*Ende Google Maps API */
+
+noscript {
+	color: red;
+}
+
+#noscript {
+	text-align: center;
+	width: 100%;
+	background-color: yellow;
+	border: 2px solid red;
+	padding: 10px;
+	margin: 5px;
+}
+
+main {
+	/*min-height: 500px;*/
+	background-color: white;
+	font-family: Bahnschrift, sans-serif;
+}
+
+.redmessage {
+	color: red;
+	font-size: 15px;
+}
+
+.center {
+	text-align: center;
+}
+
+.centerueberschrift {
+	text-align: center;
+	text-decoration: underline;
+	font-size: 30px;
+}
+
+.kleineueberschrift {
+	text-decoration: underline;
+	font-size: 20px;
+}
+
+.kleinedickeueberschrift{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.kleineueberschriftcenter {
+	text-align: center;
+	text-decoration: underline;
+	font-size: 25px;
+}
+
+.blocksatz {
+	text-align: justify;
+	font-family: Bahnschrift, sans-serif;
+}
+
+.right {
+	text-align: right;
+}
+
+.left {
+	text-align: left;
+}
+
+
+button {
+	font-size: 12px;
+	background-color: #005A9B;
+	color: white;
+	padding: 10px 33px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: auto;
+	font-family: Bahnschrift, sans-serif;
+}
+
+button:active {
+	background-color: darkblue;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+	opacity: 0.8;
+}
+
+button:disabled {
+	background-color: lightgrey;
+}
+
+a.cancel:hover, a.buttonlink:hover {
+	opacity: 0.8;
+	color: white;
+}
+
+.buttonlink {
+	font-size: 12px;
+	background-color: #005A9B;
+	color: white;
+	padding: 10px 33px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: auto;
+	font-family: Bahnschrift, sans-serif;
+}
+
+.buttonlink:active {
+	background-color: darkblue;
+}
+
+/* Extra tyle for the cancel button (red) */
+.cancel {
+	font-size: 12px;
+	background-color: red;
+	color: white;
+	padding: 12px 25px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: auto;
+	font-family: Bahnschrift, sans-serif;
+}
+
+.cancel:active {
+	background-color: darkred;
+}
+
+/* Extra tyle for the ok button (green) */
+.okbutton {
+	font-size: 12px;
+	width: auto;
+	padding: 10px 33px;
+	background-color: rgb(123, 203, 48);
+	font-family: Bahnschrift, sans-serif;
+}
+
+.okbutton:active {
+	background-color: darkgreen;
+}
+
+/* Formula */
+form {
+	border: 3px solid white;
+}
+
+label {
+	min-width: 10em;
+	display: inline-block;
+	text-align: center;
+	font-family: Bahnschrift, sans-serif;
+}
+
+label.textarea {
+	vertical-align: top;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=number],
+input[type=date], input[type=file], input[type=time], textarea {
+	width: auto;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid gray;
+	box-sizing: border-box;
+}
+
+input[type="checkbox"], button[type="submit"] {
+	margin: 8px;
+}
+
+textarea {
+	width: 20em;
+	border: 1px solid black;
+}
+
+input:focus, textarea:focus {
+	background-color: lightgray;
+}
+
+input:required+span::after {
+	color: red;
+	content: " *";
+}
+
+textarea:required+span::after {
+	color: red;
+	content: " *";
+}
+
+input[type='email']:valid+span::after, input[type='text']:valid+span::after,
+input[type='password']:valid+span::after, input[type='number']:valid+span::after,
+input[pattern]:valid+span::after, input[type='date']:valid+span::after,
+input[type='time']:valid+span::after {
+	color: green;
+	content: " ✓";
+}
+
+textarea:valid+span::after {
+	color: green;
+	content: " ✓";
+}
+
+form div {
+	padding: 0.2em;
+}
+/* End of Formula */
+.tab {
+	margin-right: 30px;
+}
+
+.box {
+	padding: 10px;
+	color: white;
+	background: #333;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 20px;
+}
+
+#flexarea {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+article {
+	flex: 2;
+}
+
+aside {
+	flex: 1;
+	margin-right: 35px;
+	margin-left: 35px;
+}
+
+input {
+	font-family: Bahnschrift, sans-serif;
+}
+
+.unorderedList {
+	list-style-type: disc;
+	background-color: white;
+	display: list-item;
+}
+
+.infotext {
+	max-width: 50%;
+	font-size: 12px;
+	margin: auto;
+}
+
+.border-bottom {
+	border-bottom-style: solid;
+}
+
+.nodisplay {
+	display: none;
+}
+
+/*Ünernommen von https://stackoverflow.com/questions/2091168/how-to-disable-a-link-using-only-css*/
+.not-active {
+	pointer-events: none;
+	cursor: default;
+	text-decoration: none;
+	color: black;
+}
+/*Ende Übernommen*/
+.containerBild {
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+	position: absolute;
+	bottom: 8px;
+	left: 16px;
+}
+
+/* Top left text */
+.top-left {
+	position: absolute;
+	top: 8px;
+	left: 16px;
+	color: black;
+}
+
+/* Top right text */
+.top-right {
+	position: absolute;
+	top: 8px;
+	right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+	position: absolute;
+	bottom: 8px;
+	right: 16px;
+}
+
+/* Centered text */
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.carousel-content {
+	position: absolute;
+	bottom: 10%;
+	left: 5%;
+	z-index: 20;
+	color: white;
+	text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+.containerStartseite {
+	position: relative;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.containerStartseite img {vertical-align: middle;}
+
+.containerStartseite .content {
+	position: absolute;
+	bottom: 0;
+	background: rgb(0, 0, 0); /* Fallback color */
+	background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+	color: #f1f1f1;
+	width: 100%;
+	padding: 20px;
+}
+
+@media screen and (min-width: 601px) {
+	.responsive {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.responsive {
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.faq {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+}
